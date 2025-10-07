@@ -6,14 +6,14 @@ solde = int(50)
 print("bonjour, ", nameplayer, "votre solde est de : ", solde)
 
 while True :
-    continuer = str(input("voulez vous pariez ? [y/n] : "))
+    continuer = str(input("voulez vous parier ? [y/n] : "))
 
     if continuer == "n" :
         print("En revoir !")
         break
 
     else :
-        bet = int(input("Enter votre mise : "))
+        bet = int(input("Entrée votre mise : "))
 
     if bet > solde :
         print("Vous n'avez pas cette somme")
@@ -25,14 +25,14 @@ while True :
             player = random.randint(1, 24)
 
             if cpu > player :
-                return "l ordinateur a gagner"
+                return "l ordinateur a gagné"
             else :
-                return "vous avez gagner"
+                return "vous avez gagné"
 
         paris = gambling(bet, solde)
         print(paris)
 
-        if paris == "l ordinateur a gagner":
+        if paris == "l ordinateur a gagné":
             solde = solde - bet
 
         else :
