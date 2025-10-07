@@ -5,7 +5,7 @@ Have fun trying your luck skills. 🎉
 
 ---
 
-👨‍💻 **Code by:** Snowy (o2freal)  
+👨‍💻 **Code by :** Snowy (o2freal)  
 🏫 **Developed for :** School project
 
 ---
