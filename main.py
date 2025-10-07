@@ -1,12 +1,14 @@
 import random
-
+import time
 nameplayer = str(input("Nom du joueur : "))
 solde = int(50)
 
 print("bonjour, ", nameplayer, "votre solde est de : ", solde)
+time.sleep(1)
 
 while True :
     continuer = str(input("voulez vous parier ? [y/n] : "))
+    time.sleep(0.5)
 
     if continuer == "n" :
         print("En revoir !")
@@ -21,28 +23,31 @@ while True :
 
     else :
         def gambling(a, b):
-            cpu = random.randint(1, 24)
-            player = random.randint(1, 24)
+            cpu = random.randint(1, 12)
+            player = random.randint(1, 12)
 
             if cpu > player :
-                return "l ordinateur a gagné"
+                return "l'ordinateur a gagné"
             else :
                 return "vous avez gagné"
 
         paris = gambling(bet, solde)
         print(paris)
+        time.sleep(1.5)
 
-        if paris == "l ordinateur a gagné":
+        if paris == "l'ordinateur a gagné":
             solde = solde - bet
 
         else :
             solde = solde + bet
 
         if solde == 0 :
-            print("vous avez perdu ! ")
+            print("vous avez perdu ! vous etes maintenant pauvre.")
+            time.sleep(0.5)
             break
 
         else :
             print(nameplayer, "votre nouvelle solde est de : ", solde)
+            time.sleep(0.5)
 
 
