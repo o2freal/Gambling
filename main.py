@@ -3,7 +3,7 @@ import time
 nameplayer = str(input("Nom du joueur : "))
 solde = int(50)
 
-print("bonjour, ", nameplayer, "votre solde est de : ", solde)
+print("bonjour, ", nameplayer, "votre solde est de : $",solde)
 time.sleep(1)
 
 while True :
@@ -11,7 +11,7 @@ while True :
     time.sleep(0.5)
 
     if continuer == "n" :
-        print("En revoir !")
+        print("Au revoir !")
         break
 
     else :
@@ -47,7 +47,7 @@ while True :
             break
 
         else :
-            print(nameplayer, "votre nouvelle solde est de : ", solde)
+            print(nameplayer, "votre nouvelle solde est de : $",solde)
             time.sleep(0.5)
 
 
